@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LetsPlay/HomeViewController.m"
-            timestampString = "470070267.712122"
+            timestampString = "470136220.229374"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "-initData"
             landmarkType = "5">
          </BreakpointContent>

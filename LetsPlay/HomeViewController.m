@@ -31,6 +31,8 @@
     
     self.homeTableView.dataSource = self;
     
+    self.homeTableView.delegate = self;
+    
     //[self.view addSubview:self.homeTableView];
     
     
@@ -75,23 +77,22 @@
     NSLog(@"end init data");
 }
 
-#pragma mark UITableViewDataSource
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.contracts.count;
-}
-
-#pragma mark return the number of rows per group
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"numberOfRowsInSection %li", (long)section);
-    KCContractGroup *group = self.contracts[section];
-    return group.contracts.count;
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.contracts.count;
+}
+
+#pragma mark return the number of rows per group
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"numberOfRowsInSection %li", (long)section);
+    KCContractGroup *group = self.contracts[section];
+    return group.contracts.count;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"cellForRowAtIndexPath indexPath(%li,%li)",indexPath.section,indexPath.row);
@@ -128,5 +129,34 @@
     }
     return index;
 }
+
+#pragma mark UITableViewDelegate
+#pragma mark set the height for header
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    NSLog(@"set the height for header");
+    if (section == 0) {
+        return 50;
+    }
+    return 40;
+}
+
+#pragma mark set the height for row
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"set the height for row");
+    return 80;
+}
+
+#pragma mark set the height for footer
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    NSLog(@"set the height for footer");
+    return 40;
+}
+
+#pragma mark estimated height
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"set estimated height for row");
+    return 40;
+}
+
 
 @end
