@@ -10,7 +10,7 @@
 #define KCContract_h
 #import <Foundation/Foundation.h>
 
-@interface KCContract : NSObject
+@interface KCContact : NSObject
 
 #pragma mark first name
 @property (nonatomic,copy) NSString *firstName;
@@ -22,9 +22,9 @@
 @property (nonatomic,copy) NSString *phoneNumber;
 
 #pragma mark init method
--(KCContract *)initWithFirstName:(NSString *)firstName andLastName:(NSString *)lastName andPhoneNumber:(NSString *)phoneNumber;
+-(KCContact *)initWithFirstName:(NSString *)firstName andLastName:(NSString *)lastName andPhoneNumber:(NSString *)phoneNumber;
 
-+(KCContract *)initWithFirstName:(NSString *)firstName andLastName:(NSString *)lastName andPhoneNumber:(NSString *)phoneNumber;
++(KCContact *)initWithFirstName:(NSString *)firstName andLastName:(NSString *)lastName andPhoneNumber:(NSString *)phoneNumber;
 
 #pragma mark getName
 -(NSString *)getName;

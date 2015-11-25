@@ -16,8 +16,8 @@
 		DC22FB5D1BD8E2E900BB2781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22FB5B1BD8E2E900BB2781 /* LaunchScreen.storyboard */; };
 		DC22FB681BD8E2E900BB2781 /* LetsPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB671BD8E2E900BB2781 /* LetsPlayTests.m */; };
 		DC22FB731BD8E2E900BB2781 /* LetsPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB721BD8E2E900BB2781 /* LetsPlayUITests.m */; };
-		DC8D50181C0475DB00D42836 /* KCContract.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D50171C0475DB00D42836 /* KCContract.m */; settings = {ASSET_TAGS = (); }; };
-		DC8D501B1C0479D600D42836 /* KCContractGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D501A1C0479D600D42836 /* KCContractGroup.m */; settings = {ASSET_TAGS = (); }; };
+		DC8D50181C0475DB00D42836 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D50171C0475DB00D42836 /* KCContact.m */; settings = {ASSET_TAGS = (); }; };
+		DC8D501B1C0479D600D42836 /* KCContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D501A1C0479D600D42836 /* KCContactGroup.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		DC22FB6E1BD8E2E900BB2781 /* LetsPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC22FB721BD8E2E900BB2781 /* LetsPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetsPlayUITests.m; sourceTree = "<group>"; };
 		DC22FB741BD8E2E900BB2781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC8D50161C0475B000D42836 /* KCContract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCContract.h; sourceTree = "<group>"; };
-		DC8D50171C0475DB00D42836 /* KCContract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContract.m; sourceTree = "<group>"; };
-		DC8D50191C0479BF00D42836 /* KCContractGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCContractGroup.h; sourceTree = "<group>"; };
-		DC8D501A1C0479D600D42836 /* KCContractGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContractGroup.m; sourceTree = "<group>"; };
+		DC8D50161C0475B000D42836 /* KCContact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCContact.h; sourceTree = "<group>"; };
+		DC8D50171C0475DB00D42836 /* KCContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContact.m; sourceTree = "<group>"; };
+		DC8D50191C0479BF00D42836 /* KCContactGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCContactGroup.h; sourceTree = "<group>"; };
+		DC8D501A1C0479D600D42836 /* KCContactGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContactGroup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,10 +161,10 @@
 		DC22FB811BD8E3CE00BB2781 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DC8D50161C0475B000D42836 /* KCContract.h */,
-				DC8D50171C0475DB00D42836 /* KCContract.m */,
-				DC8D50191C0479BF00D42836 /* KCContractGroup.h */,
-				DC8D501A1C0479D600D42836 /* KCContractGroup.m */,
+				DC8D50161C0475B000D42836 /* KCContact.h */,
+				DC8D50171C0475DB00D42836 /* KCContact.m */,
+				DC8D50191C0479BF00D42836 /* KCContactGroup.h */,
+				DC8D501A1C0479D600D42836 /* KCContactGroup.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -322,8 +322,8 @@
 				DC22FB4F1BD8E2E800BB2781 /* AppDelegate.m in Sources */,
 				DC22FB521BD8E2E800BB2781 /* HomeViewController.m in Sources */,
 				DC22FB4C1BD8E2E800BB2781 /* main.m in Sources */,
-				DC8D50181C0475DB00D42836 /* KCContract.m in Sources */,
-				DC8D501B1C0479D600D42836 /* KCContractGroup.m in Sources */,
+				DC8D50181C0475DB00D42836 /* KCContact.m in Sources */,
+				DC8D501B1C0479D600D42836 /* KCContactGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,7 +467,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LetsPlay/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felix.liu.LetsPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,7 +483,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LetsPlay/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.felix.liu.LetsPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";

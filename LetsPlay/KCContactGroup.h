@@ -10,7 +10,7 @@
 #define KCContractGroup_h
 #import <Foundation/Foundation.h>
 
-@interface KCContractGroup : NSObject
+@interface KCContactGroup : NSObject
 
 #pragma mark group name
 @property (nonatomic,copy)NSString *name;
@@ -19,13 +19,13 @@
 @property (nonatomic,copy)NSString *detail;
 
 #pragma mark group member
-@property (nonatomic,strong)NSMutableArray *contracts;
+@property (nonatomic,strong)NSMutableArray *contacts;
 
 #pragma mark init method
--(KCContractGroup *)initWithName:(NSString *)name andDetail:(NSString *)detail andContracts:(NSMutableArray *)contracts;
+-(KCContactGroup *)initWithName:(NSString *)name andDetail:(NSString *)detail andContacts:(NSMutableArray *)contacts;
 
 #pragma mark static init method
-+(KCContractGroup *)initWithName:(NSString *)name andDetail:(NSString *)detail andContracts:(NSMutableArray *)contracts;
++(KCContactGroup *)initWithName:(NSString *)name andDetail:(NSString *)detail andContacts:(NSMutableArray *)contacts;
 
 @end
 

@@ -7,12 +7,12 @@
 //
 
 #import "HomeViewController.h"
-#import "KCContract.h"
-#import "KCContractGroup.h"
+#import "KCContact.h"
+#import "KCContactGroup.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *homeTableView;
-@property (nonatomic, strong)NSMutableArray *contracts;
+@property (nonatomic, strong)NSMutableArray *contacts;
 @property (nonatomic, strong)NSMutableArray *tableArray, *foodImageArray, *timeArray;
 @property (nonatomic, strong)UITableViewCell *homeTableViewCell;
 
@@ -42,38 +42,38 @@
 #pragma mark load data
 -(void)initData {
     NSLog(@"begin init data");
-    self.contracts = [[NSMutableArray alloc] init];
+    self.contacts = [[NSMutableArray alloc] init];
     
-    KCContract *contract1 = [[KCContract alloc] initWithFirstName:@"felix" andLastName:@"liu" andPhoneNumber:@"13671720675"];
-    KCContract *contract2 = [[KCContract alloc] initWithFirstName:@"fiona" andLastName:@"zhang" andPhoneNumber:@"18750590105"];
-    KCContractGroup *group1 = [[KCContractGroup alloc] initWithName:@"f" andDetail:@"With names beginning with f" andContracts:[NSMutableArray arrayWithObjects:contract1,contract2, nil]];
-    [self.contracts addObject:group1];
+    KCContact *contract1 = [[KCContact alloc] initWithFirstName:@"felix" andLastName:@"liu" andPhoneNumber:@"13671720675"];
+    KCContact *contract2 = [[KCContact alloc] initWithFirstName:@"fiona" andLastName:@"zhang" andPhoneNumber:@"18750590105"];
+    KCContactGroup *group1 = [[KCContactGroup alloc] initWithName:@"f" andDetail:@"With names beginning with f" andContacts:[NSMutableArray arrayWithObjects:contract1,contract2, nil]];
+    [self.contacts addObject:group1];
     
-    KCContract *contract3 = [[KCContract alloc] initWithFirstName:@"menghua" andLastName:@"liu" andPhoneNumber:@"13671720675"];
-    KCContract *contract4 = [[KCContract alloc] initWithFirstName:@"mengliang" andLastName:@"liu" andPhoneNumber:@"18750590105"];
-    KCContractGroup *group2 = [[KCContractGroup alloc] initWithName:@"m" andDetail:@"With names beginning with m" andContracts:[NSMutableArray arrayWithObjects:contract3,contract4, nil]];
-    [self.contracts addObject:group2];
+    KCContact *contract3 = [[KCContact alloc] initWithFirstName:@"menghua" andLastName:@"liu" andPhoneNumber:@"13671720675"];
+    KCContact *contract4 = [[KCContact alloc] initWithFirstName:@"mengliang" andLastName:@"liu" andPhoneNumber:@"18750590105"];
+    KCContactGroup *group2 = [[KCContactGroup alloc] initWithName:@"m" andDetail:@"With names beginning with m" andContacts:[NSMutableArray arrayWithObjects:contract3,contract4, nil]];
+    [self.contacts addObject:group2];
     
-    KCContract *contract5=[[KCContract alloc]initWithFirstName:@"Lee" andLastName:@"Terry" andPhoneNumber:@"18500131238"];
-    KCContract *contract6=[[KCContract alloc] initWithFirstName:@"Lee" andLastName:@"Jack" andPhoneNumber:@"18500131239"];
-    KCContract *contract7=[[KCContract alloc] initWithFirstName:@"Lee" andLastName:@"Rose" andPhoneNumber:@"18500131240"];
-    KCContractGroup *group3=[[KCContractGroup alloc] initWithName:@"L" andDetail:@"With names beginning with L" andContracts:[NSMutableArray arrayWithObjects:contract5,contract6,contract7, nil]];
-    [self.contracts addObject:group3];
+    KCContact *contract5=[[KCContact alloc]initWithFirstName:@"Lee" andLastName:@"Terry" andPhoneNumber:@"18500131238"];
+    KCContact *contract6=[[KCContact alloc] initWithFirstName:@"Lee" andLastName:@"Jack" andPhoneNumber:@"18500131239"];
+    KCContact *contract7=[[KCContact alloc] initWithFirstName:@"Lee" andLastName:@"Rose" andPhoneNumber:@"18500131240"];
+    KCContactGroup *group3=[[KCContactGroup alloc] initWithName:@"L" andDetail:@"With names beginning with L" andContacts:[NSMutableArray arrayWithObjects:contract5,contract6,contract7, nil]];
+    [self.contacts addObject:group3];
     
-    KCContract *contact8=[KCContract initWithFirstName:@"Wang" andLastName:@"Stephone" andPhoneNumber:@"18500131241"];
-    KCContract *contact9=[KCContract initWithFirstName:@"Wang" andLastName:@"Lucy" andPhoneNumber:@"18500131242"];
-    KCContract *contact10=[KCContract initWithFirstName:@"Wang" andLastName:@"Lily" andPhoneNumber:@"18500131243"];
-    KCContract *contact11=[KCContract initWithFirstName:@"Wang" andLastName:@"Emily" andPhoneNumber:@"18500131244"];
-    KCContract *contact12=[KCContract initWithFirstName:@"Wang" andLastName:@"Andy" andPhoneNumber:@"18500131245"];
-    KCContractGroup *group4=[KCContractGroup initWithName:@"W" andDetail:@"With names beginning with W" andContracts:[NSMutableArray arrayWithObjects:contact8,contact9,contact10,contact11,contact12, nil]];
-    [self.contracts addObject:group4];
+    KCContact *contact8=[KCContact initWithFirstName:@"Wang" andLastName:@"Stephone" andPhoneNumber:@"18500131241"];
+    KCContact *contact9=[KCContact initWithFirstName:@"Wang" andLastName:@"Lucy" andPhoneNumber:@"18500131242"];
+    KCContact *contact10=[KCContact initWithFirstName:@"Wang" andLastName:@"Lily" andPhoneNumber:@"18500131243"];
+    KCContact *contact11=[KCContact initWithFirstName:@"Wang" andLastName:@"Emily" andPhoneNumber:@"18500131244"];
+    KCContact *contact12=[KCContact initWithFirstName:@"Wang" andLastName:@"Andy" andPhoneNumber:@"18500131245"];
+    KCContactGroup *group4=[KCContactGroup initWithName:@"W" andDetail:@"With names beginning with W" andContacts:[NSMutableArray arrayWithObjects:contact8,contact9,contact10,contact11,contact12, nil]];
+    [self.contacts addObject:group4];
     
     
-    KCContract *contact13=[KCContract initWithFirstName:@"Zhang" andLastName:@"Joy" andPhoneNumber:@"18500131246"];
-    KCContract *contact14=[KCContract initWithFirstName:@"Zhang" andLastName:@"Vivan" andPhoneNumber:@"18500131247"];
-    KCContract *contact15=[KCContract initWithFirstName:@"Zhang" andLastName:@"Joyse" andPhoneNumber:@"18500131248"];
-    KCContractGroup *group5=[[KCContractGroup alloc] initWithName:@"Z" andDetail:@"With names beginning with Z" andContracts:[NSMutableArray arrayWithObjects:contact13,contact14,contact15, nil]];
-    [self.contracts addObject:group5];
+    KCContact *contact13=[KCContact initWithFirstName:@"Zhang" andLastName:@"Joy" andPhoneNumber:@"18500131246"];
+    KCContact *contact14=[KCContact initWithFirstName:@"Zhang" andLastName:@"Vivan" andPhoneNumber:@"18500131247"];
+    KCContact *contact15=[KCContact initWithFirstName:@"Zhang" andLastName:@"Joyse" andPhoneNumber:@"18500131248"];
+    KCContactGroup *group5=[[KCContactGroup alloc] initWithName:@"Z" andDetail:@"With names beginning with Z" andContacts:[NSMutableArray arrayWithObjects:contact13,contact14,contact15, nil]];
+    [self.contacts addObject:group5];
     NSLog(@"end init data");
 }
 
@@ -84,20 +84,20 @@
 
 #pragma mark UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.contracts.count;
+    return self.contacts.count;
 }
 
 #pragma mark return the number of rows per group
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSLog(@"numberOfRowsInSection %li", (long)section);
-    KCContractGroup *group = self.contracts[section];
-    return group.contracts.count;
+    KCContactGroup *group = self.contacts[section];
+    return group.contacts.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"cellForRowAtIndexPath indexPath(%li,%li)",indexPath.section,indexPath.row);
-    KCContractGroup *group = self.contracts[indexPath.section];
-    KCContract *contract = group.contracts[indexPath.row];
+    KCContactGroup *group = self.contacts[indexPath.section];
+    KCContact *contract = group.contacts[indexPath.row];
     
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     cell.textLabel.text = [contract getName];
@@ -108,7 +108,7 @@
 #pragma mark return group title
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSLog(@"titleForHeaderInSection %li", section);
-    KCContractGroup *group = self.contracts[section];
+    KCContactGroup *group = self.contacts[section];
     return group.name;
     
 }
@@ -116,7 +116,7 @@
 #pragma mark return group detail
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
     NSLog(@"titleForFooterInSection %li",section);
-    KCContractGroup *group = self.contracts[section];
+    KCContactGroup *group = self.contacts[section];
     return group.detail;
 }
 
@@ -124,7 +124,7 @@
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     NSLog(@"create index for group");
     NSMutableArray *index = [[NSMutableArray alloc] init];
-    for (KCContractGroup *group in self.contracts) {
+    for (KCContactGroup *group in self.contacts) {
         [index addObject:group.name];
     }
     return index;
