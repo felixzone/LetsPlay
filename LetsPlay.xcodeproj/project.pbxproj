@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC22FB4C1BD8E2E800BB2781 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB4B1BD8E2E800BB2781 /* main.m */; };
+		DC22FB4F1BD8E2E800BB2781 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB4E1BD8E2E800BB2781 /* AppDelegate.m */; };
+		DC22FB521BD8E2E800BB2781 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB511BD8E2E800BB2781 /* HomeViewController.m */; };
+		DC22FB551BD8E2E800BB2781 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB541BD8E2E800BB2781 /* CalendarViewController.m */; };
+		DC22FB581BD8E2E800BB2781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22FB561BD8E2E800BB2781 /* Main.storyboard */; };
+		DC22FB5A1BD8E2E900BB2781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC22FB591BD8E2E900BB2781 /* Assets.xcassets */; };
+		DC22FB5D1BD8E2E900BB2781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22FB5B1BD8E2E900BB2781 /* LaunchScreen.storyboard */; };
+		DC22FB681BD8E2E900BB2781 /* LetsPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB671BD8E2E900BB2781 /* LetsPlayTests.m */; };
+		DC22FB731BD8E2E900BB2781 /* LetsPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB721BD8E2E900BB2781 /* LetsPlayUITests.m */; };
+		DC8D50181C0475DB00D42836 /* KCContract.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D50171C0475DB00D42836 /* KCContract.m */; settings = {ASSET_TAGS = (); }; };
+		DC8D501B1C0479D600D42836 /* KCContractGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D501A1C0479D600D42836 /* KCContractGroup.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC22FB641BD8E2E900BB2781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC22FB3F1BD8E2E800BB2781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC22FB461BD8E2E800BB2781;
+			remoteInfo = LetsPlay;
+		};
+		DC22FB6F1BD8E2E900BB2781 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC22FB3F1BD8E2E800BB2781 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC22FB461BD8E2E800BB2781;
+			remoteInfo = LetsPlay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC22FB471BD8E2E800BB2781 /* LetsPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC22FB4B1BD8E2E800BB2781 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC22FB4D1BD8E2E800BB2781 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC22FB4E1BD8E2E800BB2781 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC22FB501BD8E2E800BB2781 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DC22FB511BD8E2E800BB2781 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DC22FB531BD8E2E800BB2781 /* CalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		DC22FB541BD8E2E800BB2781 /* CalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		DC22FB571BD8E2E800BB2781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC22FB591BD8E2E900BB2781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC22FB5C1BD8E2E900BB2781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC22FB5E1BD8E2E900BB2781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC22FB631BD8E2E900BB2781 /* LetsPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC22FB671BD8E2E900BB2781 /* LetsPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetsPlayTests.m; sourceTree = "<group>"; };
+		DC22FB691BD8E2E900BB2781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC22FB6E1BD8E2E900BB2781 /* LetsPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC22FB721BD8E2E900BB2781 /* LetsPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LetsPlayUITests.m; sourceTree = "<group>"; };
+		DC22FB741BD8E2E900BB2781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8D50161C0475B000D42836 /* KCContract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCContract.h; sourceTree = "<group>"; };
+		DC8D50171C0475DB00D42836 /* KCContract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContract.m; sourceTree = "<group>"; };
+		DC8D50191C0479BF00D42836 /* KCContractGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCContractGroup.h; sourceTree = "<group>"; };
+		DC8D501A1C0479D600D42836 /* KCContractGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCContractGroup.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC22FB441BD8E2E800BB2781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC22FB601BD8E2E900BB2781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC22FB6B1BD8E2E900BB2781 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC22FB3E1BD8E2E800BB2781 = {
+			isa = PBXGroup;
+			children = (
+				DC22FB491BD8E2E800BB2781 /* LetsPlay */,
+				DC22FB661BD8E2E900BB2781 /* LetsPlayTests */,
+				DC22FB711BD8E2E900BB2781 /* LetsPlayUITests */,
+				DC22FB481BD8E2E800BB2781 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC22FB481BD8E2E800BB2781 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC22FB471BD8E2E800BB2781 /* LetsPlay.app */,
+				DC22FB631BD8E2E900BB2781 /* LetsPlayTests.xctest */,
+				DC22FB6E1BD8E2E900BB2781 /* LetsPlayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC22FB491BD8E2E800BB2781 /* LetsPlay */ = {
+			isa = PBXGroup;
+			children = (
+				DC22FB831BD8E3E200BB2781 /* Source */,
+				DC22FB821BD8E3D900BB2781 /* Controller */,
+				DC22FB811BD8E3CE00BB2781 /* Model */,
+				DC22FB801BD8E3BF00BB2781 /* View */,
+				DC22FB561BD8E2E800BB2781 /* Main.storyboard */,
+				DC22FB591BD8E2E900BB2781 /* Assets.xcassets */,
+				DC22FB5B1BD8E2E900BB2781 /* LaunchScreen.storyboard */,
+				DC22FB5E1BD8E2E900BB2781 /* Info.plist */,
+				DC22FB4A1BD8E2E800BB2781 /* Supporting Files */,
+			);
+			path = LetsPlay;
+			sourceTree = "<group>";
+		};
+		DC22FB4A1BD8E2E800BB2781 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC22FB4D1BD8E2E800BB2781 /* AppDelegate.h */,
+				DC22FB4E1BD8E2E800BB2781 /* AppDelegate.m */,
+				DC22FB4B1BD8E2E800BB2781 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC22FB661BD8E2E900BB2781 /* LetsPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC22FB671BD8E2E900BB2781 /* LetsPlayTests.m */,
+				DC22FB691BD8E2E900BB2781 /* Info.plist */,
+			);
+			path = LetsPlayTests;
+			sourceTree = "<group>";
+		};
+		DC22FB711BD8E2E900BB2781 /* LetsPlayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC22FB721BD8E2E900BB2781 /* LetsPlayUITests.m */,
+				DC22FB741BD8E2E900BB2781 /* Info.plist */,
+			);
+			path = LetsPlayUITests;
+			sourceTree = "<group>";
+		};
+		DC22FB801BD8E3BF00BB2781 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DC22FB811BD8E3CE00BB2781 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC8D50161C0475B000D42836 /* KCContract.h */,
+				DC8D50171C0475DB00D42836 /* KCContract.m */,
+				DC8D50191C0479BF00D42836 /* KCContractGroup.h */,
+				DC8D501A1C0479D600D42836 /* KCContractGroup.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DC22FB821BD8E3D900BB2781 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC22FB501BD8E2E800BB2781 /* HomeViewController.h */,
+				DC22FB511BD8E2E800BB2781 /* HomeViewController.m */,
+				DC22FB531BD8E2E800BB2781 /* CalendarViewController.h */,
+				DC22FB541BD8E2E800BB2781 /* CalendarViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DC22FB831BD8E3E200BB2781 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC22FB461BD8E2E800BB2781 /* LetsPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC22FB771BD8E2E900BB2781 /* Build configuration list for PBXNativeTarget "LetsPlay" */;
+			buildPhases = (
+				DC22FB431BD8E2E800BB2781 /* Sources */,
+				DC22FB441BD8E2E800BB2781 /* Frameworks */,
+				DC22FB451BD8E2E800BB2781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetsPlay;
+			productName = LetsPlay;
+			productReference = DC22FB471BD8E2E800BB2781 /* LetsPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC22FB621BD8E2E900BB2781 /* LetsPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC22FB7A1BD8E2E900BB2781 /* Build configuration list for PBXNativeTarget "LetsPlayTests" */;
+			buildPhases = (
+				DC22FB5F1BD8E2E900BB2781 /* Sources */,
+				DC22FB601BD8E2E900BB2781 /* Frameworks */,
+				DC22FB611BD8E2E900BB2781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC22FB651BD8E2E900BB2781 /* PBXTargetDependency */,
+			);
+			name = LetsPlayTests;
+			productName = LetsPlayTests;
+			productReference = DC22FB631BD8E2E900BB2781 /* LetsPlayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC22FB6D1BD8E2E900BB2781 /* LetsPlayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC22FB7D1BD8E2E900BB2781 /* Build configuration list for PBXNativeTarget "LetsPlayUITests" */;
+			buildPhases = (
+				DC22FB6A1BD8E2E900BB2781 /* Sources */,
+				DC22FB6B1BD8E2E900BB2781 /* Frameworks */,
+				DC22FB6C1BD8E2E900BB2781 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC22FB701BD8E2E900BB2781 /* PBXTargetDependency */,
+			);
+			name = LetsPlayUITests;
+			productName = LetsPlayUITests;
+			productReference = DC22FB6E1BD8E2E900BB2781 /* LetsPlayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC22FB3F1BD8E2E800BB2781 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Felix Liu";
+				TargetAttributes = {
+					DC22FB461BD8E2E800BB2781 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					DC22FB621BD8E2E900BB2781 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = DC22FB461BD8E2E800BB2781;
+					};
+					DC22FB6D1BD8E2E900BB2781 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = DC22FB461BD8E2E800BB2781;
+					};
+				};
+			};
+			buildConfigurationList = DC22FB421BD8E2E800BB2781 /* Build configuration list for PBXProject "LetsPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC22FB3E1BD8E2E800BB2781;
+			productRefGroup = DC22FB481BD8E2E800BB2781 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC22FB461BD8E2E800BB2781 /* LetsPlay */,
+				DC22FB621BD8E2E900BB2781 /* LetsPlayTests */,
+				DC22FB6D1BD8E2E900BB2781 /* LetsPlayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC22FB451BD8E2E800BB2781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC22FB5D1BD8E2E900BB2781 /* LaunchScreen.storyboard in Resources */,
+				DC22FB5A1BD8E2E900BB2781 /* Assets.xcassets in Resources */,
+				DC22FB581BD8E2E800BB2781 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC22FB611BD8E2E900BB2781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC22FB6C1BD8E2E900BB2781 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC22FB431BD8E2E800BB2781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC22FB551BD8E2E800BB2781 /* CalendarViewController.m in Sources */,
+				DC22FB4F1BD8E2E800BB2781 /* AppDelegate.m in Sources */,
+				DC22FB521BD8E2E800BB2781 /* HomeViewController.m in Sources */,
+				DC22FB4C1BD8E2E800BB2781 /* main.m in Sources */,
+				DC8D50181C0475DB00D42836 /* KCContract.m in Sources */,
+				DC8D501B1C0479D600D42836 /* KCContractGroup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC22FB5F1BD8E2E900BB2781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC22FB681BD8E2E900BB2781 /* LetsPlayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC22FB6A1BD8E2E900BB2781 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC22FB731BD8E2E900BB2781 /* LetsPlayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC22FB651BD8E2E900BB2781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC22FB461BD8E2E800BB2781 /* LetsPlay */;
+			targetProxy = DC22FB641BD8E2E900BB2781 /* PBXContainerItemProxy */;
+		};
+		DC22FB701BD8E2E900BB2781 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC22FB461BD8E2E800BB2781 /* LetsPlay */;
+			targetProxy = DC22FB6F1BD8E2E900BB2781 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC22FB561BD8E2E800BB2781 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC22FB571BD8E2E800BB2781 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC22FB5B1BD8E2E900BB2781 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC22FB5C1BD8E2E900BB2781 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC22FB751BD8E2E900BB2781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC22FB761BD8E2E900BB2781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC22FB781BD8E2E900BB2781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LetsPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.liu.LetsPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC22FB791BD8E2E900BB2781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LetsPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.liu.LetsPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC22FB7B1BD8E2E900BB2781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LetsPlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.liu.LetsPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsPlay.app/LetsPlay";
+			};
+			name = Debug;
+		};
+		DC22FB7C1BD8E2E900BB2781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LetsPlayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.liu.LetsPlayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsPlay.app/LetsPlay";
+			};
+			name = Release;
+		};
+		DC22FB7E1BD8E2E900BB2781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LetsPlayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.liu.LetsPlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LetsPlay;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DC22FB7F1BD8E2E900BB2781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LetsPlayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.felix.liu.LetsPlayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LetsPlay;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC22FB421BD8E2E800BB2781 /* Build configuration list for PBXProject "LetsPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC22FB751BD8E2E900BB2781 /* Debug */,
+				DC22FB761BD8E2E900BB2781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC22FB771BD8E2E900BB2781 /* Build configuration list for PBXNativeTarget "LetsPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC22FB781BD8E2E900BB2781 /* Debug */,
+				DC22FB791BD8E2E900BB2781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC22FB7A1BD8E2E900BB2781 /* Build configuration list for PBXNativeTarget "LetsPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC22FB7B1BD8E2E900BB2781 /* Debug */,
+				DC22FB7C1BD8E2E900BB2781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC22FB7D1BD8E2E900BB2781 /* Build configuration list for PBXNativeTarget "LetsPlayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC22FB7E1BD8E2E900BB2781 /* Debug */,
+				DC22FB7F1BD8E2E900BB2781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC22FB3F1BD8E2E800BB2781 /* Project object */;
+}
