@@ -16,8 +16,8 @@
 		DC22FB5D1BD8E2E900BB2781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC22FB5B1BD8E2E900BB2781 /* LaunchScreen.storyboard */; };
 		DC22FB681BD8E2E900BB2781 /* LetsPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB671BD8E2E900BB2781 /* LetsPlayTests.m */; };
 		DC22FB731BD8E2E900BB2781 /* LetsPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC22FB721BD8E2E900BB2781 /* LetsPlayUITests.m */; };
-		DC8D50181C0475DB00D42836 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D50171C0475DB00D42836 /* KCContact.m */; settings = {ASSET_TAGS = (); }; };
-		DC8D501B1C0479D600D42836 /* KCContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D501A1C0479D600D42836 /* KCContactGroup.m */; settings = {ASSET_TAGS = (); }; };
+		DC8D50181C0475DB00D42836 /* KCContact.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D50171C0475DB00D42836 /* KCContact.m */; };
+		DC8D501B1C0479D600D42836 /* KCContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8D501A1C0479D600D42836 /* KCContactGroup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

@@ -15,6 +15,7 @@
 @property (nonatomic, strong)NSMutableArray *contacts;
 @property (nonatomic, strong)NSMutableArray *tableArray, *foodImageArray, *timeArray;
 @property (nonatomic, strong)UITableViewCell *homeTableViewCell;
+@property (nonatomic, strong)NSIndexPath *selectedIndexPath;
 
 @end
 
