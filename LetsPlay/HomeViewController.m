@@ -101,10 +101,31 @@
     KCContact *contract = group.contacts[indexPath.row];
     
     static NSString *cellIndentifier = @"UITableViewCellIndentifierKey1";
+    static NSString *cellIndentifierforFirstRow = @"UITableViewCellIndentifierKeyWithSwitch";
     //UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+    UITableViewCell *cell;
+    
+    if (indexPath.row == 0) {
+        cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifierforFirstRow];
+    } else {
+        cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+    }
+    
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIndentifier];
+        if (indexPath.row == 0) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIndentifierforFirstRow];
+            UISwitch *sw = [[UISwitch alloc]init];
+            [sw addTarget:self action:@selector(switchValueChange:) forControlEvents:UIControlEventValueChanged];
+            cell.accessoryView = sw;
+        } else {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIndentifier];
+            cell.accessoryType = UITableViewCellAccessoryDetailButton;
+        }
+    }
+    
+    if (indexPath.row == 0) {
+        ((UISwitch *)cell.accessoryView).tag = indexPath.section;
+        ((UISwitch *)cell.accessoryView).on = indexPath.row;
     }
     
     cell.textLabel.text = [contract getName];
@@ -202,6 +223,7 @@
 
 #pragma mark 切换开关转化事件
 -(void)switchValueChange:(UISwitch *)sw{
+    
     NSLog(@"section:%li,switch:%i",(long)sw.tag, sw.on);
 }
 
