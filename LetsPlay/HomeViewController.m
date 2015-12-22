@@ -10,7 +10,7 @@
 #import "KCContact.h"
 #import "KCContactGroup.h"
 
-@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,UIAlertViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *homeTableView;
 @property (nonatomic, strong)NSMutableArray *contacts;
 @property (nonatomic, strong)NSMutableArray *tableArray, *foodImageArray, *timeArray;
@@ -100,7 +100,13 @@
     KCContactGroup *group = self.contacts[indexPath.section];
     KCContact *contract = group.contacts[indexPath.row];
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    static NSString *cellIndentifier = @"UITableViewCellIndentifierKey1";
+    //UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIndentifier];
+    }
+    
     cell.textLabel.text = [contract getName];
     cell.detailTextLabel.text = contract.phoneNumber;
     return cell;
@@ -159,5 +165,44 @@
     return 40;
 }
 
+#pragma mark click row
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedIndexPath = indexPath;
+    KCContactGroup *group = self.contacts[indexPath.section];
+    KCContact *contact = group.contacts[indexPath.row];
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"System Info" message:[contact getName] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    UITextField *textField = [alert textFieldAtIndex:0];
+    textField.text = contact.phoneNumber;
+    [alert show];
+}
+
+#pragma mark delegate for window, save data
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        UITextField *textField = [alertView textFieldAtIndex:0];
+        KCContactGroup *group = self.contacts[self.selectedIndexPath.section];
+        KCContact *contact = group.contacts[self.selectedIndexPath.row];
+        contact.phoneNumber = textField.text;
+        
+        //[self.homeTableView reloadData]; //performance is too bad
+        NSArray *indexPaths = @[self.selectedIndexPath];
+        [self.homeTableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
+    }
+    
+}
+
+
+#pragma mark 重写状态样式方法
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+
+#pragma mark 切换开关转化事件
+-(void)switchValueChange:(UISwitch *)sw{
+    NSLog(@"section:%li,switch:%i",(long)sw.tag, sw.on);
+}
 
 @end
