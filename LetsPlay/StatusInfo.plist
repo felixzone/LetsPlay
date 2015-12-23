@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Id</key>
+		<integer>1</integer>
+		<key>createdAt</key>
+		<string>8:23</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>1.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>距离iPhone 6发布还有不到一个月，俄罗斯奢华iPhone定制厂商曝光了一组iPhone 6前后面板照片，这是首次前后面板组装后的照片公布，也是目前最接近iPhone 6真实外形的照片。</string>
+		<key>userName</key>
+		<string>小冰</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>2</integer>
+		<key>createdAt</key>
+		<string>8:54</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>2.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>据台湾媒体，苹果iPhone 6发布进入倒计时，富士康位于郑州、深圳、太原等厂区正在进展加工出货。郭台铭近期多次前往iPhone 6生产线坐镇，务求首批7000万至8000万部产品顺利交货。</string>
+		<key>userName</key>
+		<string>丽丽</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>3</integer>
+		<key>createdAt</key>
+		<string>9:01</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>3.jpg</string>
+		<key>source</key>
+		<string>iPad mini 2</string>
+		<key>text</key>
+		<string>今日早些时候有消息称，5.5英寸iPhone 6将采用2915mAh大容量电池，这给了果粉很大的盼望，因为大家可以不再担心其续航...</string>
+		<key>userName</key>
+		<string>小娜</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>4</integer>
+		<key>createdAt</key>
+		<string>9:06</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>4.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>在音悦台iPhone客户端里发现一首 @张靓颖 的《BAZAAR 官方版》,推荐给大家.谁动了你的香水.谁动了你的水晶鞋.找到他.他就是你的真命天子。</string>
+		<key>userName</key>
+		<string>炎月</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>5</integer>
+		<key>createdAt</key>
+		<string>9:23</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>5.jpg</string>
+		<key>source</key>
+		<string>iPad Air</string>
+		<key>text</key>
+		<string>刘海可以吗-莫阡辰 公众微信：mqianchen #莫阡辰# 我刚刚用#微录客#iPhone版拍了一段视频，快来看看吧:http://t.cn/RPEStsc @vlook微录客。</string>
+		<key>userName</key>
+		<string>阡陌</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>6</integer>
+		<key>createdAt</key>
+		<string>10:11</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>6.jpg</string>
+		<key>source</key>
+		<string>iPad Air</string>
+		<key>text</key>
+		<string>据说是iPhone 6新谍照，音量键在机身左侧，整机采用圆滑的边角设计，这底部已经不想吐槽了，9月份一大波新机要来临了：http://t.cn/RPEU0Mg</string>
+		<key>userName</key>
+		<string>林晨</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>7</integer>
+		<key>createdAt</key>
+		<string>10:23</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>7.jpg</string>
+		<key>source</key>
+		<string>iPad mini 2</string>
+		<key>text</key>
+		<string>今天讲FaceTime的设置。在“设置”-“FaceTime”菜单中可以打开或关闭FaceTime，指定电话号码、Apple ID或与FaceTime配合使用的电子邮件地址，以及设置主叫号码和黑名单功能。</string>
+		<key>userName</key>
+		<string>月月</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>8</integer>
+		<key>createdAt</key>
+		<string>11:45</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>8.jpg</string>
+		<key>source</key>
+		<string>iPad Air</string>
+		<key>text</key>
+		<string>【前天看了个技术帖：住宾馆怎么知道房间有没有针孔摄像头】开个房亲自试试。关灯，拉窗帘拉，打开手机照相，不开闪光，用手机围绕房间转一圈，木有红点啊！</string>
+		<key>userName</key>
+		<string>水花净月</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>9</integer>
+		<key>createdAt</key>
+		<string>14:23</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>9.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>之前这个叫《误解》的iPhone 5s电视广告一出来就感动了很多人，最近它得到了艾美奖辖下创意艺术奖最佳广告。</string>
+		<key>userName</key>
+		<string>CNET</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>10</integer>
+		<key>createdAt</key>
+		<string>15:00</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>10.jpg</string>
+		<key>source</key>
+		<string>iPad Air</string>
+		<key>text</key>
+		<string>买东西时，怕小贩的秤超重，用自己的手机验秤是个不错的主意[挤眼] 手机验秤指南：iPhone4s重140克，三星note3重168克，小米3重145克，iPhone5s和iPhone5重量是112克！ </string>
+		<key>userName</key>
+		<string>楚大侠</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>11</integer>
+		<key>createdAt</key>
+		<string>15:46</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>11.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>在腾冲！向中国远征军阵亡的将士致敬！人民永远不会忘记你们！美图秀秀iPhone版 </string>
+		<key>userName</key>
+		<string>爱上你</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>12</integer>
+		<key>createdAt</key>
+		<string>14:05</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>12.jpg</string>
+		<key>source</key>
+		<string>iPad mini 2</string>
+		<key>text</key>
+		<string>乔布斯的蜡像在国内出现并不让人感到惊奇，但乔布斯手中拿着的既不是 iPhone 4，也不是自己最后参与研发的 iPhone 4s，而是 iPhone 5s，旁边的货架上还摆放着 Beats 的耳机产品。</string>
+		<key>userName</key>
+		<string>Jone</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>13</integer>
+		<key>createdAt</key>
+		<string>16:34</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>13.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>【极致纤薄！ iPhone 6前面板与金属后壳合体照片欣赏】虽然我们已经多次见过 iPhone 6前面板以及后壳，但今天的照片是第一次将前面板和后壳组装在一起，让我们能进一步了解 iPhone 6 整体外观的设计细节。</string>
+		<key>userName</key>
+		<string>爱疯可</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>14</integer>
+		<key>createdAt</key>
+		<string>18:20</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>14.jpg</string>
+		<key>source</key>
+		<string>iPhone 5s</string>
+		<key>text</key>
+		<string>继一大波机模照片后，俄罗斯 iPhone 定制厂商 FeldVolk 在 Instagram 上曝光了一组新的 iPhone 6 真机图。由于原件是来自供应商的前后面板组装而成。</string>
+		<key>userName</key>
+		<string>刀客</string>
+	</dict>
+	<dict>
+		<key>Id</key>
+		<integer>15</integer>
+		<key>createdAt</key>
+		<string>18:23</string>
+		<key>mbtype</key>
+		<string>mbtype.png</string>
+		<key>profileImageUrl</key>
+		<string>15.jpg</string>
+		<key>source</key>
+		<string>iPad mini 2</string>
+		<key>text</key>
+		<string>8月20日，苹果公司周二收盘股价创下历史新高水平，超过了2012年保持的最高记录，这主要是因为投资者看好苹果即将推出的新产品，例如大屏幕的iPhone和智能手表等。</string>
+		<key>userName</key>
+		<string>楚留香</string>
+	</dict>
+</array>
+</plist>
